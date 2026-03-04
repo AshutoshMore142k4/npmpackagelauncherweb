@@ -1,5 +1,5 @@
 import { HeroSection } from '@/components/HeroSection';
-import { FeaturesSection, CLISection, FooterSection } from '@/components/LandingSections';
+import { FeaturesSection, CLISection, DocsSection, FooterSection } from '@/components/LandingSections';
 
 const Index = () => {
   return (
@@ -7,6 +7,7 @@ const Index = () => {
       <HeroSection />
       <FeaturesSection />
       <CLISection />
+      <DocsSection />
       <FooterSection />
     </div>
   );
