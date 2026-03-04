@@ -1,39 +1,35 @@
 import { motion } from 'framer-motion';
 import { Brain, Copy, Skull, Lock, Bot, GitBranch, Terminal, FileJson, Image, Settings, CheckCircle2 } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const categories = [
   {
     icon: Brain,
     title: 'Clarity',
-    emoji: '🧠',
     description: 'Cyclomatic complexity, deep nesting, unreadable names, oversized files',
     color: 'text-grade-a',
   },
   {
     icon: Copy,
     title: 'Duplication',
-    emoji: '📋',
     description: 'Copy-pasted blocks, repeated useEffect logic, redundant patterns',
     color: 'text-grade-b',
   },
   {
     icon: Skull,
     title: 'Dead Code',
-    emoji: '💀',
     description: 'Unused imports, exports, and variables quietly rotting in your codebase',
     color: 'text-grade-d',
   },
   {
     icon: Lock,
     title: 'Secret Leakage',
-    emoji: '🔐',
     description: "API keys, tokens, and credentials that shouldn't be committed",
     color: 'text-destructive',
   },
   {
     icon: Bot,
     title: 'AI Slop',
-    emoji: '🤖',
     description: 'Oversized functions, TODO clusters, console.log spam, prop drilling',
     color: 'text-accent',
   },
@@ -93,10 +89,10 @@ export function FeaturesSection() {
             <motion.div
               key={cat.title}
               variants={itemVariants}
-              className="group relative rounded-xl border border-border bg-card p-6 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5"
+              className="group relative rounded-xl border border-border bg-card p-6 hover:border-foreground/20 transition-all duration-300 hover:shadow-lg hover:shadow-foreground/5"
             >
               <div className="flex items-start gap-4">
-                <span className="text-2xl">{cat.emoji}</span>
+                <cat.icon className={cn("size-5 mt-0.5 shrink-0", cat.color)} />
                 <div>
                   <h3 className="font-heading font-semibold text-foreground text-lg">{cat.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{cat.description}</p>
@@ -108,9 +104,9 @@ export function FeaturesSection() {
           {/* Extra card: the "result" */}
           <motion.div
             variants={itemVariants}
-            className="relative rounded-xl border border-primary/20 bg-card p-6 glow-border flex flex-col items-center justify-center text-center"
+            className="relative rounded-xl border border-foreground/20 bg-card p-6 glow-border flex flex-col items-center justify-center text-center"
           >
-            <div className="text-5xl font-bold text-primary font-mono glow-text">A+</div>
+            <div className="text-5xl font-bold text-foreground font-mono glow-text">A+</div>
             <p className="mt-2 text-sm text-muted-foreground">Your target grade</p>
           </motion.div>
         </motion.div>
@@ -150,7 +146,7 @@ export function CLISection() {
             <motion.div
               key={feat.flag}
               variants={itemVariants}
-              className="flex items-start gap-3 rounded-lg border border-border bg-card p-4 hover:border-primary/20 transition-colors"
+              className="flex items-start gap-3 rounded-lg border border-border bg-card p-4 hover:border-foreground/20 transition-colors"
             >
               <feat.icon className="size-5 text-foreground mt-0.5 shrink-0" />
               <div>
@@ -182,7 +178,7 @@ export function FooterSection() {
               href="https://www.npmjs.com/package/codereportcard"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors font-mono"
             >
               npm
             </a>
@@ -190,7 +186,7 @@ export function FooterSection() {
               href="https://github.com/AbiruzzamanMolla/codereportcard"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors font-mono"
             >
               GitHub
             </a>
