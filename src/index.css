@@ -7,19 +7,19 @@
 @layer base {
   :root {
     --background: 220 20% 4%;
-    --foreground: 150 10% 88%;
+    --foreground: 220 10% 92%;
 
     --card: 220 18% 7%;
-    --card-foreground: 150 10% 88%;
+    --card-foreground: 220 10% 92%;
 
     --popover: 220 18% 7%;
-    --popover-foreground: 150 10% 88%;
+    --popover-foreground: 220 10% 92%;
 
-    --primary: 142 72% 50%;
+    --primary: 220 10% 92%;
     --primary-foreground: 220 20% 4%;
 
     --secondary: 220 16% 12%;
-    --secondary-foreground: 150 10% 78%;
+    --secondary-foreground: 220 10% 78%;
 
     --muted: 220 14% 10%;
     --muted-foreground: 220 10% 50%;
@@ -32,12 +32,12 @@
 
     --border: 220 14% 14%;
     --input: 220 14% 14%;
-    --ring: 142 72% 50%;
+    --ring: 220 10% 92%;
 
     --radius: 0.5rem;
 
-    --glow: 142 72% 50%;
-    --terminal: 142 72% 50%;
+    --glow: 220 10% 92%;
+    --terminal: 220 10% 92%;
     --grade-a: 142 72% 50%;
     --grade-b: 172 66% 50%;
     --grade-c: 45 93% 58%;
@@ -45,13 +45,13 @@
     --grade-f: 0 72% 55%;
 
     --sidebar-background: 220 18% 5%;
-    --sidebar-foreground: 150 10% 88%;
-    --sidebar-primary: 142 72% 50%;
+    --sidebar-foreground: 220 10% 92%;
+    --sidebar-primary: 220 10% 92%;
     --sidebar-primary-foreground: 220 20% 4%;
     --sidebar-accent: 220 16% 12%;
-    --sidebar-accent-foreground: 150 10% 78%;
+    --sidebar-accent-foreground: 220 10% 78%;
     --sidebar-border: 220 14% 14%;
-    --sidebar-ring: 142 72% 50%;
+    --sidebar-ring: 220 10% 92%;
   }
 }
 
@@ -65,17 +65,17 @@
   }
 
   ::selection {
-    background: hsl(142 72% 50% / 0.25);
+    background: hsl(220 10% 92% / 0.2);
   }
 }
 
 @layer components {
   .glow-text {
-    text-shadow: 0 0 20px hsl(var(--glow) / 0.4), 0 0 60px hsl(var(--glow) / 0.15);
+    text-shadow: 0 0 20px hsl(var(--glow) / 0.3), 0 0 60px hsl(var(--glow) / 0.1);
   }
 
   .glow-border {
-    box-shadow: 0 0 15px hsl(var(--glow) / 0.15), inset 0 0 15px hsl(var(--glow) / 0.05);
+    box-shadow: 0 0 15px hsl(var(--glow) / 0.1), inset 0 0 15px hsl(var(--glow) / 0.03);
   }
 
   .terminal-bg {
@@ -91,6 +91,6 @@
   }
 
   .gradient-radial {
-    background: radial-gradient(ellipse at 50% 0%, hsl(var(--primary) / 0.12) 0%, transparent 60%);
+    background: radial-gradient(ellipse at 50% 0%, hsl(var(--primary) / 0.06) 0%, transparent 60%);
   }
 }

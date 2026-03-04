@@ -73,7 +73,7 @@ export function FeaturesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="font-mono text-xs text-primary tracking-widest uppercase">What it analyzes</span>
+          <span className="font-mono text-xs text-muted-foreground tracking-widest uppercase">What it analyzes</span>
           <h2 className="mt-4 font-heading text-3xl md:text-5xl font-bold text-foreground">
             Five dimensions of code health
           </h2>
@@ -130,7 +130,7 @@ export function CLISection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="font-mono text-xs text-primary tracking-widest uppercase">Built for real workflows</span>
+          <span className="font-mono text-xs text-muted-foreground tracking-widest uppercase">Built for real workflows</span>
           <h2 className="mt-4 font-heading text-3xl md:text-5xl font-bold text-foreground">
             CLI-first, pipeline-ready
           </h2>
@@ -152,9 +152,9 @@ export function CLISection() {
               variants={itemVariants}
               className="flex items-start gap-3 rounded-lg border border-border bg-card p-4 hover:border-primary/20 transition-colors"
             >
-              <feat.icon className="size-5 text-primary mt-0.5 shrink-0" />
+              <feat.icon className="size-5 text-foreground mt-0.5 shrink-0" />
               <div>
-                <code className="font-mono text-sm text-primary">{feat.flag}</code>
+                <code className="font-mono text-sm text-foreground">{feat.flag}</code>
                 <p className="text-xs text-muted-foreground mt-1">{feat.desc}</p>
               </div>
             </motion.div>
@@ -171,7 +171,7 @@ export function FooterSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <span className="font-mono text-lg font-bold text-primary glow-text">{'{ }'}</span>
+            <span className="font-mono text-lg font-bold text-foreground glow-text">{'{ }'}</span>
             <span className="font-heading font-bold text-foreground">codereportcard</span>
           </div>
           <p className="text-sm text-muted-foreground font-mono">
