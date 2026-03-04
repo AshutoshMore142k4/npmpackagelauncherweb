@@ -136,12 +136,9 @@ function HeroHeader() {
   return (
     <header>
       <nav
-        data-scrolled={isScrolled}
         className={cn(
           'fixed z-50 w-full transition-all duration-500',
-          isScrolled
-            ? 'py-2 bg-background/60 backdrop-blur-2xl border-b border-border shadow-lg shadow-background/20'
-            : 'py-4 bg-transparent'
+          isScrolled ? 'py-2' : 'py-4'
         )}
       >
         <div
@@ -153,7 +150,9 @@ function HeroHeader() {
           <div
             className={cn(
               'flex items-center justify-between transition-all duration-500',
-              isScrolled && 'rounded-full bg-card/80 border border-border px-5 py-2'
+              isScrolled
+                ? 'rounded-full px-5 py-2 border border-foreground/[0.08] backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06),inset_0_-1px_0_rgba(255,255,255,0.02)] bg-[rgba(255,255,255,0.03)]'
+                : ''
             )}
           >
             <a href="/" className="flex items-center gap-2">
