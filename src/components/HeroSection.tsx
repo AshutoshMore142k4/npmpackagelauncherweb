@@ -80,13 +80,13 @@ export function HeroSection() {
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                 <AnimatedGroup preset="blur-slide">
                   <a
-                    href="https://www.npmjs.com/package/codereportcard"
+                    href="https://11startups.tech/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mx-auto flex w-fit items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 text-xs font-mono"
                   >
                     <span className="text-foreground animate-pulse-glow">●</span>
-                    <span className="text-secondary-foreground">v1.0 — Now live on npm</span>
+                    <span className="text-secondary-foreground">Backed by 11startups</span>
                     <ChevronRight className="size-3 text-muted-foreground" />
                   </a>
 
