@@ -116,11 +116,19 @@ export function HeroSection() {
                           Star on GitHub
                         </Button>
                       </a>
-                      <a href="#docs">
-                        <Button variant="outline" size="lg" className="gap-2 font-mono text-sm border-border hover:border-foreground/30 hover:bg-foreground/5">
-                          Docs
-                          <ArrowRight className="size-4" />
-                        </Button>
+                      <a
+                        href="https://www.producthunt.com/products/codereportcard-vibecoder-s-nightmare/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-codereportcard&#0045;vibecoder&#0045;s&#0045;nightmare"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex overflow-hidden rounded-lg border border-border bg-card hover:border-foreground/30 transition-colors"
+                      >
+                        <img
+                          src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1174216&theme=dark"
+                          alt="Codereportcard - Your codebase's report card scored 0–100, graded A+ to F | Product Hunt"
+                          style={{ width: '250px', height: '54px', display: 'block' }}
+                          width="250"
+                          height="54"
+                        />
                       </a>
                     </div>
                   </div>
